@@ -1,0 +1,79 @@
+<nav id="nav-spy" class="navbar navbar-dark navbar-expand-md fixed-top mr-auto">
+	<div class="container">
+		<span class="navbar-brand" href="#" routerLink="main">
+			<span class="blinker">_</span>
+		<span class="text"></span>
+		</span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link hide-on-click" href="#section1">ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hide-on-click" href="#section2">SKILLS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hide-on-click" href="#section3">EXPERIENCE</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hide-on-click" href="#section4">PROJECTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link hide-on-click" href="#section5">CONTACT</a>
+				</li>
+				<li class="nav-item" *ngIf="authService.user | async">
+					<a class="nav-link" routerLink="blog" routerLinkActive="active">BLOG</a>
+				</li>
+				<li class="nav-item" *ngIf="authService.user | async">
+					<a class="nav-link" routerLink="dashboard" routerLinkActive="active">
+						MANAGE
+					</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<i class="fa fa-sign-in" aria-hidden="true"></i>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+						<div class="container-fluid">
+							<app-firebase-auth></app-firebase-auth>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div>
+	<router-outlet></router-outlet>
+	<!-- <div class="cookie-warning hidden">
+		<div class="cookie-warning-text text-justify">
+			This site uses cookies and similar technologies, including for statistical purposes.
+			<a href="http://wszystkoociasteczkach.pl/" target="_blank" rel="noopener">Learn more</a>
+			<div class="row mx-auto justify-content-center pt-3">
+				<button class="btn btn-primary btn-cookie-warning">
+I understood</button>
+			</div>
+		</div>
+	</div> -->
+</div>
+<footer class="text-center">
+	<div class="overlay-up-icon-div">
+		<a href="" id="back-to-top" data-toggle="tooltip">
+			<i class="fa fa-angle-double-up overlay-up-icon"></i>
+		</a>
+	</div>
+	<div class="container copyrights">
+		&copy; Mrugesh_Patel, 2018
+	</div>
+	<div class="pt-3">
+		<a href="mailto:mrpatel8180@gmail.com">Email <i class="icon fa fa-envelope"></i></a>
+		<a href="https://www.linkedin.com/in/mr-p-b38556109/" target="_blank" rel="noopener">Linkedin <i class="fab fa-linkedin-in"></i></a> |
+		<a href="https://twitter.com/Mrugesh_Patel_?lang=en" target="_blank" rel="noopener">Twitter<i class="fa fa-twitter"></i></a> |
+		<a href="https://github.com/mrpatel15" target="_blank" rel="noopener">Github <i class="icon fa fa-github-alt"></i></a>
+		
+	</div>
+</footer>

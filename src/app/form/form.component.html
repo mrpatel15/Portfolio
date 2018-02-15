@@ -1,0 +1,21 @@
+<div class="container-fluid col-sm-8">
+	<form [formGroup]="rForm" (ngSubmit)="addMessage(rForm.value)">
+		<div class="form-row">
+			<div class="form-group col-sm-6">
+				<input type="email" class="form-control" id="form-email" placeholder="Email" formControlName="email">
+				<div class="alert alert-danger" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">The correct format: example@gmail.com</div>
+			</div>
+			<div class="form-group col-sm-6">
+				<input type="text" class="form-control" id="phone" placeholder="Phone number" formControlName="phone">
+				<div class="alert alert-danger" *ngIf="!rForm.controls['phone'].valid && rForm.controls['phone'].touched">The correct format: 1112224444</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<textarea class="form-control" id="text" rows="8" placeholder="Message content" formControlName="text"></textarea>
+			<div class="alert alert-danger" *ngIf="!rForm.controls['text'].valid && rForm.controls['text'].touched">Required number of letters 10-500</div>
+		</div>
+		<div class="text-right">
+			<button type="submit" class="btn btn-primary btn-footer" [disabled]="!rForm.valid">Send</button>
+		</div>
+	</form>
+</div>

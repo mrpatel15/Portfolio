@@ -1,0 +1,169 @@
+<div id="section1" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-10 col-lg-7 mx-auto">
+			<div class="alert alert-success text-center" *ngIf="authService.user | async">
+				<h4 class="mb-0">
+					You are logged in as
+					<span style="font-weight: bold">
+						{{ (authService.user | async)?.email }} !
+					</span>
+					<p class="pt-2 mb-0">
+						Number of messages
+						<span class="badge badge-warning">{{ (dashboardContactComponent.messages$ | async)?.length }}</span>
+					</p>
+				</h4>
+			</div>
+			<h3 style="color: #40ff00;">Mrugesh Patel</h3>
+			<div class="row mt-5">
+				<div class="col-sm-8">
+					<div class="text-justify">
+						<h4 style="text-align: left !important;">The creator of the software with passion and passion</h4>
+						<p class="pt-2">
+						Here you will find a short summary of my skills, tools used by me, selected projects and mileage, education and career.
+						</p>
+						<p>
+							Each project has a link to GitHub, where you will find a detailed description and source code.
+						</p>
+						<p>
+						
+							I am working as a Front End Developer | Web Developer (UI), I am using JavaScript, HTML, CSS, AngularJS 1.x, Angular 2+ (4/5)
+						
+						</p>
+					
+						<p>
+							
+							I try to touch many languages ​​and technologies and keep up with the latest developments in the IT world.
+						</p>
+						<p>
+							Check also my other projects, 
+							<a href="https://github.com/mrpatel15" target="_blank" rel="noopener">GitHub</a>.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="mx-auto">
+						<img src="assets/images/Mrugesh-Photo.jpeg" class="my-photo">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jarallax" data-jarallax='{"speed": 0.5}'>
+	<img class="jarallax-img" src="assets/images/header.jpg" alt="">
+</div>
+<div id="section2" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-10 col-lg-7 mx-auto">
+			<h3 class="pb-5">Skills</h3>
+			<div class="row pb-4">
+				<div class="col-sm-2 mx-auto skill-logo">
+					<img src="../../assets/images/rust.svg" class="skill-svg">
+				</div>
+				<div class="col-sm-2 mx-auto skill-logo">
+					<div class="skill-logo">
+						<img src="../../assets/images/java.svg">
+					</div>
+				</div>
+				<div class="col-sm-2 mx-auto skill-logo">
+					<div class="skill-logo">
+						<img src="../../assets/images/js.svg">
+					</div>
+				</div>
+				<div class="col-sm-2 mx-auto skill-logo">
+					<div class="skill-logo">
+						<img src="../../assets/images/android.svg">
+					</div>
+				</div>
+				<div class="col-sm-2 mx-auto skill-logo">
+					<div class="skill-logo">
+						<img src="../../assets/images/ps.svg">
+					</div>
+				</div>
+			</div>
+			<hr class="style-one">
+			<div class="row skills-font pb-1 pt-4 text-center">
+				<div class="col-sm-6">
+					<h4>Back-End</h4>
+					<p>Java, Spring, Node.js</p>
+				</div>
+				<div class="col-sm-6">
+					<h4>Front-End</h4>
+					<p>HTML, CSS, Bootstrap, JavaScript, AngularJS, React</p>
+
+				</div>
+			</div>
+			<div class="row skills-font pb-1 text-center">
+				<div class="col-sm-6">
+					<h4>Database</h4>
+					<p>SQL, MongoDB, Firebase, LDAP</p>
+				</div>
+				<div class="col-sm-6">
+					<h4>Tests</h4>
+					<p>UI, integration, Test-driven development (TDD)</p>
+				</div>
+			</div>
+			<div class="row skills-font pb-1 text-center">
+				<div class="col-sm-6">
+					<h4>Operating System</h4>
+					<p>Windows, Linux, Android</p>
+				</div>
+				<div class="col-sm-6">
+					<h4>Graphics</h4>
+					<p>Adobe Photoshop, Dream-Weaver</p>
+				</div>
+			</div>
+			<div class="row skills-font pb-1 text-center">
+				<div class="col-sm-12">
+					<h4>Tools</h4>
+					<p>Maven, Gradle, Git, NPM, Yarn, Webpack, Gulp, Bower, Travis</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jarallax" data-jarallax='{"speed": 0.5}'>
+	<img class="jarallax-img" src="assets/images/keyboard.jpg" alt="">
+</div>
+<div id="section3" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-10 col-lg-7 mx-auto">
+			<h3 class="pb-5">Experience</h3>
+			<app-experience>
+				<div class="centered-element">
+					<div class="loader"></div>
+				</div>
+			</app-experience>
+		</div>
+	</div>
+</div>
+<div class="jarallax" data-jarallax='{"speed": 0.5}'>
+	<img class="jarallax-img" src="assets/images/code.jpg" alt="">
+</div>
+<div id="section4" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-10 col-lg-8 col-xl-7 mx-auto">
+			<h3 class="pb-5">Projects</h3>
+			<app-projects>
+				<div class="centered-element">
+					<div class="loader"></div>
+				</div>
+			</app-projects>
+		</div>
+	</div>
+</div>
+<div class="jarallax" data-jarallax='{"speed": 0.5}'>
+	<img class="jarallax-img" src="assets/images/motherboard.jpg" alt="">
+</div>
+<div id="section5" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-10 col-lg-7 mx-auto">
+			<h3 class="pb-5">Contact</h3>
+			<app-form>
+				<div class="centered-element">
+					<div class="loader"></div>
+				</div>
+			</app-form>
+		</div>
+	</div>
+</div>

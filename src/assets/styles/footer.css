@@ -1,0 +1,46 @@
+.overlay-up-icon-div {
+  top: -25px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.overlay-up-icon {
+  color: var(--second-color);
+  font-size: 50px;
+}
+
+.overlay-up-icon:hover {
+  color: var(--my-blue);
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 25px;
+  position: relative;
+  top: 4px;
+}
+
+footer {
+  background-color: var(--footer-color);
+  padding-top: 45px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+footer a, .copyrights {
+  color: var(--white-text-color);
+  padding-bottom: 15px;
+}
+
+footer a:hover {
+  color: var(--second-color);
+  text-decoration: none;
+}
