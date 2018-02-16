@@ -35,4 +35,4 @@ firebase deploy
 
 ### Latest version
 
-https://mrpatel15.github.io/Portfolio/
+Portfollio	- https://mrugesh-patel-portfolio.firebaseapp.com
