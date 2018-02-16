@@ -15,9 +15,10 @@ npm, angular-cli
 
 ### Build, run, deploy
 ```
+For Mac user - sudo npm install
 build:
 npm install
-npm install -g @angular/cli@1.4.4
+npm install -g @angular/cli
 
 build for prod.:
 ng build --prod
