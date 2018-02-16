@@ -1,8 +1,8 @@
 language: node.js
-sudo: false
+sudo: true
 before_script:
  - npm install
- - npm install -g @angular/cli@1.4.4
+ - npm install -g @angular/cli
 script: 
  - ng build
  - ng build --prod
